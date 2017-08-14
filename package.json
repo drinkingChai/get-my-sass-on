@@ -1,0 +1,20 @@
+{
+  "name": "get-my-sass-on",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon -e html,css,scss,js app.js",
+    "build-css": "node-sass -w sass -o css",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "node-sass": "^4.5.3",
+    "nunjucks": "^3.0.1"
+  }
+}
