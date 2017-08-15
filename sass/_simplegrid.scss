@@ -1,6 +1,7 @@
 * { box-sizing: border-box; }
 
 $cols: 12;
+$gutter: 20px;
 
 // testing
 // $gray: #AAAAAA;
@@ -12,7 +13,7 @@ $cols: 12;
     float: left;
     $width: ($i / $cols);
     width: percentage($width);
-    padding: 20px;
+    padding: $gutter;
 
     // testing
     // border: solid 1px $gray;
@@ -29,19 +30,23 @@ $cols: 12;
 
 // rows
 .row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: $gutter;
+  margin-bottom: $gutter;
 
   &:after {
     content: "";
     display: table;
     clear: both;
   }
+
+  &-escaped {
+    margin: $gutter $gutter*-1 $gutter*-1 $gutter*-1;
+  }
 }
 
 // sections
 section {
-  margin: 20px 0;
+  margin: $gutter 0;
 
   // testing
   // border: solid 1px $gray;

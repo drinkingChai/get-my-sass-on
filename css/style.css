@@ -76,9 +76,23 @@
     content: "";
     display: table;
     clear: both; }
+  .row-escaped {
+    margin: 20px -20px -20px -20px; }
 
 section {
   margin: 20px 0; }
+
+label, input, textarea, form a {
+  display: block;
+  width: 100%;
+  margin: 10px 0; }
+
+label {
+  font-weight: bold; }
+
+input, textarea {
+  padding: 10px;
+  border: solid 1px #AAAAAA; }
 
 .button-blue {
   background-color: #0074D9;
@@ -114,6 +128,14 @@ section {
 
 .button-yellow {
   background-color: #FFDC00;
+  color: #111111;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.button-cyan {
+  background-color: #00FFFF;
   color: #111111;
   padding: 10px 15px;
   text-decoration: none;

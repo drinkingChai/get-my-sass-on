@@ -1,11 +1,108 @@
 section, section > .row {
   margin: 0; }
 
+* {
+  font-family: sans-serif; }
+
 .poster {
-  height: 50vw; }
+  height: 50vh; }
+  .poster h1 {
+    margin-top: 20vh;
+    position: relative; }
+
+article {
+  padding: 20px 25px; }
+
+.shadow-btm-right {
+  box-shadow: 2px 2px 5px #AAAAAA; }
+
+.blog-post {
+  border: solid 1px #AAAAAA; }
+
+h1 {
+  font-size: 3.5em; }
 
 .bg-teal {
-  background-color: #39CCCC; }
+  background-color: #39CCCC;
+  color: #111111; }
+
+.bg-aqua {
+  background-color: #7FDBFF;
+  color: #111111; }
+
+.bg-blue {
+  background-color: #0074D9;
+  color: #111111; }
+
+.bg-cyan {
+  background-color: #00FFFF;
+  color: #111111; }
+
+.bg-white {
+  background-color: #fff;
+  color: #111111; }
+
+.bg-green {
+  background-color: #2ECC40;
+  color: #111111; }
+
+.bg-light-teal {
+  background-color: #8ae1e1;
+  color: #111111; }
+
+.bg-light-aqua {
+  background-color: #e5f8ff;
+  color: #111111; }
+
+.bg-light-blue {
+  background-color: #40a6ff;
+  color: #111111; }
+
+.bg-light-cyan {
+  background-color: #66ffff;
+  color: #111111; }
+
+.bg-light-white {
+  background-color: white;
+  color: #111111; }
+
+.bg-light-green {
+  background-color: #7ee289;
+  color: #111111; }
+
+.bg-dark-gray {
+  background-color: #5e5e5e;
+  color: #fff; }
+
+.bg-dark-black {
+  background-color: black;
+  color: #fff; }
 
 .bg-gray {
-  background-color: #AAAAAA; }
+  background-color: #AAAAAA;
+  color: #fff; }
+
+.bg-black {
+  background-color: #111111;
+  color: #fff; }
+
+.poster {
+  overflow: hidden;
+  position: relative; }
+  .poster > .row {
+    z-index: 2; }
+
+.funky-div {
+  background-color: #FFDC00;
+  width: 100%;
+  height: 300%;
+  position: relative;
+  top: -30%;
+  right: -30%;
+  transform: rotate(45deg); }
+  .funky-div-cont {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden; }

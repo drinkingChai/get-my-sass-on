@@ -1,0 +1,13 @@
+@import "_colors.scss";
+
+label, input, textarea, form a {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+label { font-weight: bold; }
+input, textarea { 
+  padding: 10px;
+  border: solid 1px $gray;
+}

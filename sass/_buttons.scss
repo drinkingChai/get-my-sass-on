@@ -11,7 +11,7 @@
 
 .button {
   $with-white-text: ('blue', $blue) ('green', $green) ('red', $maroon);
-  $with-black-text: ('orange', $orange) ('yellow', $yellow);
+  $with-black-text: ('orange', $orange) ('yellow', $yellow) ('cyan', $cyan);
 
   @each $name, $color in $with-white-text {
     &-#{$name} { @include make-button($color, $white); }
