@@ -1,0 +1,11 @@
+@mixin make-borders($color) {
+  .border {
+    &-top { border-top: solid 1px $color; }
+    &-right { border-right: solid 1px $color; }
+    &-btm { border-bottom: solid 1px $color;
+      &-right { border-right: solid 1px $color; }}
+    &-all { border: solid 1px $color; }
+
+    &-bold { border-width: 2px; }
+  }
+}

@@ -16,8 +16,22 @@ article {
 .shadow-btm-right {
   box-shadow: 2px 2px 5px #AAAAAA; }
 
-.blog-post {
+.border-top {
+  border-top: solid 1px #AAAAAA; }
+
+.border-right {
+  border-right: solid 1px #AAAAAA; }
+
+.border-btm {
+  border-bottom: solid 1px #AAAAAA; }
+  .border-btm-right {
+    border-right: solid 1px #AAAAAA; }
+
+.border-all {
   border: solid 1px #AAAAAA; }
+
+.border-bold {
+  border-width: 2px; }
 
 h1 {
   font-size: 3.5em; }

@@ -1,15 +1,8 @@
 @import "_colors.scss";
+@import "_borders.scss";
 
 * {
   font-family: sans-serif;
-}
-
-.border {
-  &-right { border-right: solid 1px $silver; }
-  &-btm { border-bottom: solid 1px $silver; }
-  &-all { border: solid 1px $silver; }
-
-  &-bold { border-width: 2px; }
 }
 
 section {
@@ -20,3 +13,5 @@ section {
 .img{
   &-med { width: 120px; }
 }
+
+@include make-borders($silver);
