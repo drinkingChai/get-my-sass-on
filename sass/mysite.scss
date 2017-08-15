@@ -1,0 +1,15 @@
+@import "_colors.scss";
+
+section, section > .row { margin: 0; }
+
+.poster {
+  height: 50vw;
+}
+
+$bgcolors: ('teal', $teal) ('gray', $gray);
+
+.bg {
+  @each $name, $color in $bgcolors {
+    &-#{$name} { background-color: $color; }
+  }
+}

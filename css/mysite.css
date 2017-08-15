@@ -1,0 +1,11 @@
+section, section > .row {
+  margin: 0; }
+
+.poster {
+  height: 50vw; }
+
+.bg-teal {
+  background-color: #39CCCC; }
+
+.bg-gray {
+  background-color: #AAAAAA; }
