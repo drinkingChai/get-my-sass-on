@@ -1,0 +1,23 @@
+@import "_colors.scss";
+
+@mixin make-button($bgcolor, $color) {
+  background-color: $bgcolor;
+  color: $color;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button {
+  $with-white-text: ('blue', $blue) ('green', $green) ('red', $maroon);
+  $with-black-text: ('orange', $orange) ('yellow', $yellow);
+
+  @each $name, $color in $with-white-text {
+    &-#{$name} { @include make-button($color, $white); }
+  }
+
+  @each $name, $color in $with-black-text {
+    &-#{$name} { @include make-button($color, $black); }
+  }
+}

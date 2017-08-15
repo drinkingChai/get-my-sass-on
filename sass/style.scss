@@ -1,50 +1,15 @@
 @import "normalize.css";
 @import "_colors.scss";
 @import "_images.scss";
-
-* { box-sizing: border-box; }
-
-$cols: 12;
-
-@for $i from 1 through $cols {
-  .col-#{$i} {
-    float: left;
-    $width: ($i / $cols);
-    width: percentage($width);
-    padding: 20px;
-
-    // testing
-    border: solid 1px $gray;
-    background: $silver;
-    // 
-  }
-}
+@import "_simplegrid.scss";
+@import "_buttons.scss";
 
 
-// container
-.container {
-  width: 70%;
-  margin: 0 auto;
-}
+// text alignment and weight
+.text {
+  &-right { text-align: right; }
+  &-left { text-align: left; }
+  &-center { text-align: center; }
 
-// rows
-.row {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
-
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-// sections
-section {
-  margin: 20px 0;
-
-  // testing
-  border: solid 1px $gray;
+  &-bold { font-weight: bold; }
 }

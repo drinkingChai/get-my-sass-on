@@ -1,0 +1,48 @@
+* { box-sizing: border-box; }
+
+$cols: 12;
+
+// testing
+// $gray: #AAAAAA;
+// $silver: #DDDDDD;
+
+// columns
+@for $i from 1 through $cols {
+  .col-#{$i} {
+    float: left;
+    $width: ($i / $cols);
+    width: percentage($width);
+    padding: 20px;
+
+    // testing
+    // border: solid 1px $gray;
+    // background: $silver;
+    //
+  }
+}
+
+// container
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+// rows
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// sections
+section {
+  margin: 20px 0;
+
+  // testing
+  // border: solid 1px $gray;
+}
