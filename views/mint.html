@@ -1,6 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+<link rel="stylesheet" href="mint.css">
 
 
 <!--
@@ -15,41 +16,41 @@
 
 
 <div class="container">
-  <section>
-    <div class="row">
+  <section class="border-all">
+    <div class="row border-btm border-bold">
       <div class="col-12 text-bold">Transactions</div>
     </div>
-    <div class="row">
+    <div class="row border-btm">
       <div class="col-10">ATM Withdraw</div>
       <div class="col-2 text-right">-$20.00</div>
     </div>
-    <div class="row">
+    <div class="row border-btm">
       <div class="col-10">Xian Famous Foods</div>
       <div class="col-2 text-right">-$6.15</div>
     </div>
-    <div class="row">
+    <div class="row border-btm">
       <div class="col-10">PayPal</div>
       <div class="col-2 text-right">-$200.00</div>
     </div>
     <div class="row">
       <div class="col-6">
-        <a class="button-blue" href="">All Transactions</a>
+        <a class="button-orange" href="">All Transactions</a>
       </div>
       <div class="col-6">
-        <a class="button-blue" href="">Uncategorized</a>
+        <a class="button-orange" href="">Uncategorized</a>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="row">
+  <section class="border-all">
+    <div class="row border-btm border-bold">
       <div class="col-12 text-bold">Accounts</div>
     </div>
-    <div class="row">
+    <div class="row border-btm">
       <div class="col-6">Cash</div>
       <div class="col-6 text-right">$500</div>
     </div>
-    <div class="row">
+    <div class="row border-btm">
       <div class="col-6">Credit Debt</div>
       <div class="col-6 text-right">-$50</div>
     </div>
@@ -59,8 +60,8 @@
     </div>
   </section>
 
-  <section>
-    <div class="row">
+  <section class="border-all">
+    <div class="row border-btm border-bold">
       <div class="col-12 text-bold">Your portfolio</div>
     </div>
     <div class="row">
@@ -93,7 +94,25 @@
         Port 6
         <img class="thumbnail" src="http://via.placeholder.com/350x150">
       </div>
+    </div>
   </section>
-</div>
+
+  <section class="border-all">
+    <div class="row">
+      <div class="col-12 text-center text-bold  border-btm border-bold">
+        Column test!
+      </div>
+      <div class="col-6 text-center border-right">
+        <img class="img-med" src="dash.png" alt="">
+        <p>Check your credit score!</p>
+        <a class="button-green" href="">Click here</a>
+      </div>
+      <div class="col-6 text-center">
+        <img class="img-med" src="dollar.png" alt="">
+        <p>Grow your dollas!</p>
+        <a class="button-green" href="">Invest</a>
+      </div>
+    </div>
+  </section>
 
 {% endblock %}

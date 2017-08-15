@@ -1,0 +1,21 @@
+* {
+  font-family: sans-serif; }
+
+.border-right {
+  border-right: solid 1px #DDDDDD; }
+
+.border-btm {
+  border-bottom: solid 1px #DDDDDD; }
+
+.border-all {
+  border: solid 1px #DDDDDD; }
+
+.border-bold {
+  border-width: 2px; }
+
+section {
+  padding: 20px 40px;
+  box-shadow: 0 5px 10px #DDDDDD; }
+
+.img-med {
+  width: 120px; }

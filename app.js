@@ -7,6 +7,7 @@ app.engine('html', nunjucks.render);
 nunjucks.configure('views', { noCache: true });
 
 app.use(express.static('css'));
+app.use(express.static('assets'));
 app.get('/', (req, res)=> {
 	res.render('index');
 })

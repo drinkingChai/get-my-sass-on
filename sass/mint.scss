@@ -1,0 +1,22 @@
+@import "_colors.scss";
+
+* {
+  font-family: sans-serif;
+}
+
+.border {
+  &-right { border-right: solid 1px $silver; }
+  &-btm { border-bottom: solid 1px $silver; }
+  &-all { border: solid 1px $silver; }
+
+  &-bold { border-width: 2px; }
+}
+
+section {
+  padding: 20px 40px;
+  box-shadow: 0 5px 10px $silver;
+}
+
+.img{
+  &-med { width: 120px; }
+}
